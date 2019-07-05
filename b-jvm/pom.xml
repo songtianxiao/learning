@@ -2,15 +2,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>a-concurrent</artifactId>
+        <groupId>com.aiss</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../a-concurrent/pom.xml</relativePath>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.aiss</groupId>
-    <artifactId>a-concurrent</artifactId>
-    <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>../b-jvm</module>
-    </modules>
+    <artifactId>b-jvm</artifactId>
 
 
 </project>

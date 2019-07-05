@@ -19,9 +19,9 @@ public class SynTest {
 
     /*用在同步块上*/
     public void incCount(){
-        //synchronized (obj) {
+        synchronized (obj) {
             count++;
-        //}
+        }
     }
 
     /*用在方法上*/
@@ -47,7 +47,9 @@ public class SynTest {
         @Override
         public void run() {
             for (int i = 0; i < 10000; i++) {
-                synTest.incCount();
+//                synTest.incCount();
+//                synTest.incCount2();
+                synTest.incCount3();
             }
 
         }
